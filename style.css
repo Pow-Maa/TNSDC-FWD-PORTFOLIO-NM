@@ -1,0 +1,218 @@
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto Slab', serif;
+  background: linear-gradient(to right, #8360c3, #2ebf91, #f7971e);
+  background-size: cover;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  border-bottom: 1px solid black;
+}
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+nav ul li a {
+  text-decoration: none;
+  font-family: 'Great Vibes', cursive;
+  font-size: 22px;
+  color: black;
+  padding: 5px 10px;
+  transition: all 0.3s ease;
+}
+
+
+nav ul li a:hover {
+  color: darkred;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 80px;
+}
+
+/* Intro Text */
+.intro {
+  width: 45%;
+  background: linear-gradient(135deg, #ff7eb3, #ff758c, #ffe0ac);
+  padding: 30px;
+  border-radius: 20px;
+  font-size: 30px;
+  line-height: 1.8;
+  font-family: 'Great Vibes', cursive;
+}
+.intro .hi {
+  font-size: 36px;
+  font-family: 'Great Vibes', cursive;
+}
+.bold {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+}
+
+/* Photo Box */
+.photo-box {
+  width: 300px;
+  height: 300px;
+  border-radius: 25%;       /* keeps the same rounded frame */
+  overflow: hidden;         /* ensures the image stays inside the shape */
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+.photo-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;        /* fills the box nicely */
+  border-radius: 25%;       /* same curve as container */
+}
+
+
+.skills-section {
+  padding: 60px 80px;
+  text-align: center;
+  color: black;
+}
+
+.skills-section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.skills-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.skills-list li {
+  background: linear-gradient(135deg, #aff36f, #fad0c4);
+  padding: 15px;
+  border-radius: 12px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Roboto Slab', serif;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.skills-list li:hover {
+  transform: translateY(-5px);
+}
+.projects-section {
+  padding: 60px 80px;
+  text-align: center;
+  color: black;
+}
+
+.projects-section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background: linear-gradient(135deg, #89f7fe, #66a6ff);
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+}
+
+.project-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.project-card p {
+  font-family: 'Roboto Slab', serif;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.project-card .btn {
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: black;
+  color: white;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.project-card .btn:hover {
+  background: #333;
+}
+.contact-section {
+  padding: 60px 80px;
+  text-align: center;
+  background: linear-gradient(135deg, #08eeee, #c43470);
+  color: black;
+}
+
+.contact-section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  font-family: 'Roboto Slab', serif;
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.contact-info a {
+  color: darkblue;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+.footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-family: 'Roboto Slab', serif;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
