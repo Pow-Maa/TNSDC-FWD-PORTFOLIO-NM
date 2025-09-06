@@ -248,8 +248,10 @@ nav ul li a:hover {
     width: 220px;
     height: 220px;
   }
+  .skills-list {
+    grid-template-columns: 1fr 1fr; /* 2 per row on phone */
+  }
 
-  
 /* Center the last skill if odd number of items */
 .skills-list {
   justify-content: center;
@@ -267,6 +269,7 @@ nav ul li a:hover {
     width: 100%;
   }
 }
+
 
 
 
