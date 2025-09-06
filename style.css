@@ -217,28 +217,50 @@ nav ul li a:hover {
   letter-spacing: 0.5px;
 }
  
-/* Default styles for laptop/desktop (already in your CSS) */
 
-/* Extra styles for mobile screens */
+/* Mobile responsiveness (keeps desktop layout unchanged) */
 @media (max-width: 768px) {
-  .container {
-    flex-direction: column; /* stacks sections vertically */
+  header {
+    flex-direction: column;
+    align-items: center;
     padding: 10px;
   }
 
-  .project-card {
-    width: 100%; /* make project boxes full width on phone */
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .intro {
+    width: 100%;
+    font-size: 20px;
     margin-bottom: 20px;
   }
 
-  .skills-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* 2 per row */
-    gap: 10px;
+  .photo-box {
+    width: 220px;
+    height: 220px;
   }
 
-  img {
-    max-width: 100%; /* ensures your photo shrinks properly */
-    height: auto;
+  .skills-list {
+    grid-template-columns: 1fr 1fr; /* 2 per row on phone */
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr; /* stack projects vertically */
+  }
+
+  .contact-info {
+    text-align: center;
+    width: 100%;
   }
 }
+
+
