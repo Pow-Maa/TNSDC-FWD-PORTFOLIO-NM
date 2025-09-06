@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fundamentals of web Development Registration</title>
+</head>
+<body>
+    <h1>Fundamentals of web Development Registration Form</h1>
+    <form>
+
+        <!-- Name -->
+        <label for="fullname">Full Name:</label><br>
+        <input type="text" id="fullname" name="fullname" required><br><br>
+
+        <!-- Phone Number -->
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br><br>
+
+        <!-- Email -->
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- Date of Birth -->
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+
+<!-- Gender -->
+<label>Gender:</label><br>
+<input type="radio" id="male" name="gender" value="Male">
+<label for="male">Male</label><br>
+<input type="radio" id="female" name="gender" value="Female">
+<label for="female">Female</label><br>
+<input type="radio" id="other" name="gender" value="Other">
+<label for="other">Other</label><br><br>
+
+<!-- Course -->
+<label for="course">Course:</label><br>
+<select id="course" name="course" required>
+    <option value="">--Select Course--</option>
+    <option value="fullstack">Full Stack Web Development</option>
+    <option value="frontend">Frontend Development</option>
+    <option value=" frameworks">frameworks for FWD</option>
+</select><br><br>
+
+
+<!-- Qualification -->
+<label for="qualification">Qualification:</label><br>
+<select id="qualification" name="qualification" >
+    <option value="">-- Course--</option>
+    <option value="btech">Bsc</option>
+    <option value="bca">BCA</option>
+    <option value="ds">Data Science</option>
+    <option value="other">Other</option>
+</select><br><br>
+
+<!-- College Name -->
+<label for="college">College Name:</label><br>
+<input type="text" id="college" name="college"><br><br>
+
+<!-- Upload Resume -->
+<label for="resume">Upload Resume (PDF/DOC):</label><br>
+<input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx"><br><br>
+
+<!-- Address -->
+<label for="address">Permanent Address:</label><br>
+<textarea id="address" name="address" rows="7" cols="30"></textarea><br><br>
+
+<!-- Availability -->
+<label for="startdate">Available Start Date:</label><br>
+<input type="date" id="startdate" name="startdate"><br><br>
+
+
+<!-- Agreement -->
+<input type="checkbox" id="agree" name="agree">
+<label for="agreement"> I confirm that the above information is accurate </label><br><br>
+
+
+<!-- Submit -->
+<input type="submit" value="register">
+
+           </form>
+</body>
+</html>
