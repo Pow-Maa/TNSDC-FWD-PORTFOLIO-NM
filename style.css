@@ -249,10 +249,15 @@ nav ul li a:hover {
     height: 220px;
   }
 
-  .skills-list {
-    grid-template-columns: 1fr 1fr; /* 2 per row on phone */
-  }
-
+  
+/* Center the last skill if odd number of items */
+.skills-list {
+  justify-content: center;
+}
+.skills-list li:last-child:nth-child(odd) {
+  grid-column: 1 / -1; /* makes last item span full width */
+  justify-self: center; /* centers it */
+}
   .projects-grid {
     grid-template-columns: 1fr; /* stack projects vertically */
   }
@@ -262,5 +267,6 @@ nav ul li a:hover {
     width: 100%;
   }
 }
+
 
 
