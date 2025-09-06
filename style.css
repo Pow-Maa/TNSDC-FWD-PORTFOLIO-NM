@@ -216,3 +216,29 @@ nav ul li a:hover {
   font-size: 14px;
   letter-spacing: 0.5px;
 }
+ 
+/* Default styles for laptop/desktop (already in your CSS) */
+
+/* Extra styles for mobile screens */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* stacks sections vertically */
+    padding: 10px;
+  }
+
+  .project-card {
+    width: 100%; /* make project boxes full width on phone */
+    margin-bottom: 20px;
+  }
+
+  .skills-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 per row */
+    gap: 10px;
+  }
+
+  img {
+    max-width: 100%; /* ensures your photo shrinks properly */
+    height: auto;
+  }
+}
